@@ -9,10 +9,13 @@ body {
   margin: 0;
   background: #aaa;
   color: #333;
-  /* I'll give you this one for free lol */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.text {
+  margin-bottom: 10px;
 }
 
 .modal {
@@ -20,6 +23,18 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex; /* align icon and content horizontally */
+  padding: 30px; 
+  gap: 16px; 
+}
+
+.header { 
+  display: flex; /* align header text and button horizontally */
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px; /* added margin */
+  gap: 16px;
 }
 
 .icon {
@@ -33,6 +48,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0; /* do not shrink  */
 }
 
 .close-button {
@@ -50,7 +66,7 @@ body {
   padding: 0;
 }
 
-button {
+button { 
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
